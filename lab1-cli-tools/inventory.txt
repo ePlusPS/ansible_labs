@@ -1,0 +1,8 @@
+[server]
+localhost
+
+[switches]
+veos-pod-00.localdomain
+
+[routers]
+csr1000v-pod-00.localdomain

@@ -1,0 +1,12 @@
+ansible server -m ping -u root -k
+ansible-inventory --list 
+ansible switches -m raw -a "show version" -u admin -k
+ansible-inventory --graph
+ansible-config dump --only-changed
+ansible-config view
+ansible-console server -u root -k
+ansible-doc -l | grep ^junos
+ansible-doc -l | grep ^nxos
+ansible-doc -l | grep ^ios
+ansible-doc nxos_vlan -s
+
