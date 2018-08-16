@@ -1,0 +1,16 @@
+
+---
+
+- name: verify nxos version
+  hosts: nxos
+  connection: local
+  gather_facts: yes
+
+  tasks:
+    - nxos_facts:
+    - name: Current NXOS Version
+      debug: var=ansible_net_version
+    - name: Verify Version is 7.x
+      assert:
+        that:
+          - "'{{ ansible_net_version }}' is match('^7')"
