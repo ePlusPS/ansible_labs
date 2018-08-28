@@ -1,0 +1,7 @@
+snmp_community: ansibleiscool
+snmp_group: network-operator
+snmp_state: absent
+ansible_connection: httpai
+ansible_network_os: nxos
+ansible_user: admin
+transport: nxapi

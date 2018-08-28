@@ -1,0 +1,12 @@
+---
+
+- name: Gather Nexus Facts
+  hosts: nxos
+  connection: httpapi
+  gather_facts: yes
+
+  tasks:
+    - nxos_facts:
+    - name: Get All Ip Addresses
+      debug: var=ansible_net_all_ipv4_addresses
+
