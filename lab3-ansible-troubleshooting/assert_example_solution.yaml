@@ -3,7 +3,7 @@
 
 - name: verify nxos version
   hosts: nxos
-  connection: local
+  connection: network_cli
   gather_facts: yes
 
   tasks:

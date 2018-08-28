@@ -2,14 +2,13 @@
 localhost
 
 [switches]
-veos-pod-00.localdomain
-n9k-standalone-01.localdomain
+veos-pod-XX.localdomain
 
 [eos]
-veos-pod-00.localdomain
+veos-pod-XX.localdomain
 
 [nxos]
-n9k-standalone-01.localdomain
+n9k-standalone-XX.localdomain
 
 [routers]
-csr1000v-pod-00.localdomain
+csr1000v-pod-XX.localdomain
