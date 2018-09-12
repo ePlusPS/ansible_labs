@@ -1,7 +1,0 @@
----
-
-
-- hosts: server
-  gather_facts: false
-  tasks:
-    - ping:
